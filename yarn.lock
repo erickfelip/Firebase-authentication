@@ -753,7 +753,7 @@
   "resolved" "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz"
   "version" "4.0.2"
 
-"@types/node@>=12.12.47", "@types/node@>=13.7.0":
+"@types/node@^18.0.0", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
   "integrity" "sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.0.0.tgz"
   "version" "18.0.0"
