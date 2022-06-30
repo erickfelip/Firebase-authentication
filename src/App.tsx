@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Button } from "./components/Button";
+import { Homepage } from "./components/pages/Homepage";
+import { Header } from "./components/sections/Header";
 
 export const App = () => {
   const Teste = () => {
@@ -8,9 +11,8 @@ export const App = () => {
   };
 
   return (
-    <div className="teste">
-      <h1>Teste</h1>
-      <Button text="Teste" onClick={Teste} type={null} />
-    </div>
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>
   );
 };

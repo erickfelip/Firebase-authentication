@@ -6,8 +6,8 @@ import { Button } from "../Button";
 import { RootState, TypedDispatch } from "../../store";
 import { signout } from "../../store/actions/authActions";
 
-const Header: FC = () => {
-  const history = useNavigate();
+export const Header = () => {
+  let navigate = useNavigate();
   const dispatch = useDispatch<TypedDispatch>();
   const { authenticated } = useSelector((state: RootState) => state.auth);
 
@@ -34,13 +34,13 @@ const Header: FC = () => {
                 <Button
                   type={null}
                   text="Sign up"
-                  onClick={() => history("/signup")}
+                  onClick={() => navigate("/signup")}
                   className="is-primary"
                 />
                 <Button
                   type={null}
                   text="Sign in"
-                  onClick={() => history("/signin")}
+                  onClick={() => navigate("/signin")}
                 />
               </div>
             ) : (
@@ -56,5 +56,3 @@ const Header: FC = () => {
     </nav>
   );
 };
-
-export default Header;
