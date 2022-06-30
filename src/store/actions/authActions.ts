@@ -102,20 +102,20 @@ export const signIn = (
   };
 };
 
-export const signOut = (): ThunkAction<void, RootState, null, AuthAction> => {
-  return async (dispatch) => {
+export const signout = (): ThunkAction<void, RootState, null, AuthAction> => {
+  return async dispatch => {
     try {
       dispatch(setLoading(true));
       await firebase.auth().signOut();
       dispatch({
-        type: SIGN_OUT,
+        type: SIGN_OUT
       });
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       dispatch(setLoading(false));
     }
-  };
-};
+  }
+}
 
 export const setNeedVerification = (): ThunkAction<
   void,
