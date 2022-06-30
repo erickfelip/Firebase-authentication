@@ -13,6 +13,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Header />
+      <Homepage />
     </BrowserRouter>
   );
 };

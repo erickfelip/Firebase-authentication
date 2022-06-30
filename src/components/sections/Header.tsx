@@ -23,7 +23,7 @@ export const Header = () => {
             className="navbar-item"
             to={!authenticated ? "/" : "/dashboard"}
           >
-            AppName
+            Redux Flux
           </Link>
         </div>
 
